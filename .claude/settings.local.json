@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(start:)",
+      "Bash(start:*)",
+      "Bash(node -e \":*)",
+      "WebFetch(domain:m.koreagoldx.co.kr)",
+      "WebFetch(domain:www.popmart.com)",
+      "Bash(npx --version 2>/dev/null && node --version 2>/dev/null)",
+      "Bash(cd \"C:\\\\Users\\\\HAPPY\\\\Desktop\\\\레미오 공식홈페이지\" && mkdir -p deploy && cp remio-final.html deploy/index.html)",
+      "Bash(npm install:*)",
+      "Bash(npx vercel:*)",
+      "Bash(cp \"C:\\\\Users\\\\HAPPY\\\\Desktop\\\\레미오 공식홈페이지\\\\remio-final.html\" \"C:\\\\Users\\\\HAPPY\\\\Desktop\\\\레미오 공식홈페이지\\\\deploy\\\\index.html\" && cd \"C:\\\\Users\\\\HAPPY\\\\Desktop\\\\레미오 공식홈페이지\\\\deploy\" && npx vercel --prod --yes 2>&1)",
+      "Bash(echo \"TERM: $TERM\" && echo \"SHELL: $SHELL\" && echo \"Terminal Program: $TERM_PROGRAM\" && echo \"WT_SESSION: $WT_SESSION\" && echo \"Parent Process:\" && ps -p $PPID -o comm= 2>/dev/null || echo \"N/A\")",
+      "WebFetch(domain:remio.vercel.app)",
+      "WebFetch(domain:remio.kr)",
+      "WebFetch(domain:remio-nine.vercel.app)",
+      "Bash(cp \"/c/Users/윤준성/Desktop/레미오 공식홈페이지/remio-final.html\" \"/c/Users/윤준성/Desktop/레미오 공식홈페이지/deploy/index.html\" && cd \"/c/Users/윤준성/Desktop/레미오 공식홈페이지/deploy\" && npx vercel --prod --yes 2>&1)",
+      "Bash(gh auth:*)",
+      "Bash(git --version 2>&1)",
+      "Bash(curl -s -X POST \"https://script.google.com/macros/s/AKfycbw6QqPZrFT90u-Jbc6m0-YHLFm6wFne83dqQRUbQUh3AL_r2pw6pNPSX2Bea_m6wtG6Lg/exec\" \\\\\n  -H \"Content-Type: application/json\" \\\\\n  -d '{\"type\":\"dating\",\"name\":\"테스트\",\"gender\":\"남성\",\"phone\":\"01012345678\",\"birth\":\"19950101\",\"zodiac\":\"돼지띠\",\"intro\":\"테스트 신청입니다\",\"timestamp\":\"2026-03-16 테스트\"}' \\\\\n  -L 2>&1)",
+      "Bash(curl -s -X POST \"https://script.google.com/macros/s/AKfycbw6QqPZrFT90u-Jbc6m0-YHLFm6wFne83dqQRUbQUh3AL_r2pw6pNPSX2Bea_m6wtG6Lg/exec\" \\\\\n  -H \"Content-Type: application/json\" \\\\\n  --data-raw '{\"type\":\"dating\",\"name\":\"테스트\",\"gender\":\"남성\",\"phone\":\"01012345678\",\"birth\":\"19950101\",\"zodiac\":\"돼지띠\",\"intro\":\"테스트입니다\",\"timestamp\":\"2026-03-16 테스트\"}' \\\\\n  -L --max-redirs 5 2>&1)",
+      "WebFetch(domain:www.remio.co.kr)",
+      "Bash(cd:*)"
+    ]
+  }
+}

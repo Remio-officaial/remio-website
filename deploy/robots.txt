@@ -1,0 +1,5 @@
+# REMIO 레미오 - robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://www.remio.co.kr/sitemap.xml
