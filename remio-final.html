@@ -834,7 +834,7 @@ nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.92);backdrop
 .nav-links a:hover::after{transform:scaleX(1);}
 
 /* 히어로 메뉴 그리드 */
-.hero-menu{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;width:100%;max-width:520px;margin-top:8px;}
+.hero-menu{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;width:100%;max-width:600px;margin-top:8px;}
 .hero-menu-item{display:flex;flex-direction:column;align-items:center;gap:6px;background:rgba(255,255,255,.3);backdrop-filter:blur(8px);border:2px solid rgba(255,255,255,.5);border-radius:18px;padding:14px 8px;transition:.25s;text-decoration:none;}
 .hero-menu-item:hover{background:rgba(255,255,255,.55);transform:translateY(-3px);border-color:rgba(255,255,255,.8);box-shadow:0 6px 20px rgba(0,0,0,.08);}
 .hero-menu-icon{font-size:24px;line-height:1;}
@@ -1447,7 +1447,7 @@ footer{background:var(--dark);padding:52px 40px;border-radius:40px 40px 0 0;}
   .nav-links{display:none;}
   .nav-logo{font-size:22px;}
   /* 히어로 메뉴 모바일 3x2 그리드 */
-  .hero-menu{grid-template-columns:repeat(3,1fr);gap:10px;max-width:100%;}
+  .hero-menu{grid-template-columns:repeat(4,1fr);gap:10px;max-width:100%;}
   .hero-menu-item{padding:12px 6px;border-radius:16px;}
   .hero-menu-icon{font-size:22px;}
   .hero-menu-label{font-size:11px;}
@@ -1768,6 +1768,7 @@ footer{background:var(--dark);padding:52px 40px;border-radius:40px 40px 0 0;}
     <li><a href="#shop">🛒 SHOP</a></li>
     <li><a href="#saju">🔮 사주분석</a></li>
     <li><a href="#event">🥇 이벤트</a></li>
+    <li><a href="partner.html">🤝 제휴브랜드</a></li>
     <li><a href="#dating">💕 소개팅</a></li>
     <li><a href="#info">📍 오시는길</a></li>
     <li><a href="#cs">💬 고객센터</a></li>
@@ -1851,6 +1852,10 @@ footer{background:var(--dark);padding:52px 40px;border-radius:40px 40px 0 0;}
       <a href="#event" class="hero-menu-item">
         <span class="hero-menu-icon">🥇</span>
         <span class="hero-menu-label">이벤트</span>
+      </a>
+      <a href="partner.html" class="hero-menu-item">
+        <span class="hero-menu-icon">🤝</span>
+        <span class="hero-menu-label">제휴브랜드</span>
       </a>
       <a href="#dating" class="hero-menu-item">
         <span class="hero-menu-icon">💕</span>
@@ -2306,6 +2311,7 @@ footer{background:var(--dark);padding:52px 40px;border-radius:40px 40px 0 0;}
     </div>
   </div>
 </section>
+
 
 <!-- 소개팅 이벤트 -->
 <section class="date-sec" id="dating">

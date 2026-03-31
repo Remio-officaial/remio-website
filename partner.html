@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 기본 SEO -->
+<title>REMIO 레미오 제휴브랜드 | 홍대 추천맛집 & 사주타로 파트너</title>
+<meta name="description" content="레미오와 함께하는 특별한 파트너 49곳. 홍대·합정·상수 추천맛집 25곳과 사주타로 전문 상담소 24곳을 만나보세요.">
+<meta name="keywords" content="레미오 제휴, REMIO 파트너, 홍대 맛집, 홍대 타로, 홍대 사주, 합정 맛집, 상수 맛집, 홍대 추천맛집">
+<meta name="author" content="REMIO 레미오">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.remio.co.kr/partner.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="REMIO 레미오">
+<meta property="og:title" content="REMIO 제휴브랜드 | 추천맛집 & 사주타로 파트너 49곳">
+<meta property="og:description" content="레미오와 함께하는 특별한 파트너 49곳. 홍대·합정·상수 추천맛집과 사주타로 상담소를 만나보세요.">
+<meta property="og:url" content="https://www.remio.co.kr/partner.html">
+<meta property="og:image" content="https://www.remio.co.kr/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+
+<!-- 트위터 카드 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="REMIO 제휴브랜드 | 추천맛집 & 사주타로 파트너 49곳">
+<meta name="twitter:description" content="레미오와 함께하는 특별한 파트너 49곳. 홍대·합정·상수 추천맛집과 사주타로 상담소를 만나보세요.">
+<meta name="twitter:image" content="https://www.remio.co.kr/og-image.jpg">
+
+<!-- 모바일 앱 느낌 설정 -->
+<meta name="theme-color" content="#FF6B8A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!-- 파비콘 -->
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W97RE9FZ4J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-W97RE9FZ4J');
+</script>
+
+<!-- 구글 폰트 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gamja+Flower&family=Jua&display=swap" rel="stylesheet">
+
+<style>
+/* ===== 리셋 & 기본 ===== */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jua', 'Do Hyeon', 'Gamja Flower', sans-serif;
+  background: #FFFFFF;
+  color: #333;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration: none; color: inherit; }
+
+/* ===== 스크롤 리빌 애니메이션 ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== 헤더 ===== */
+.header {
+  background: #FFFFFF;
+  border-bottom: 2px solid #FFF0F3;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.header-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: #FF6B8A;
+}
+.header-home {
+  font-size: 14px;
+  color: #FF6B8A;
+  border: 1.5px solid #FF6B8A;
+  padding: 6px 16px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.header-home:hover {
+  background: #FF6B8A;
+  color: #fff;
+}
+
+/* ===== 히어로 ===== */
+.hero {
+  text-align: center;
+  padding: 48px 20px 32px;
+  background: linear-gradient(180deg, #FFF8F5 0%, #FFFFFF 100%);
+}
+.hero h1 {
+  font-family: 'Gamja Flower', cursive;
+  font-size: 36px;
+  color: #FF6B8A;
+  margin-bottom: 8px;
+}
+.hero p {
+  font-size: 16px;
+  color: #888;
+  font-family: 'Jua', sans-serif;
+}
+
+/* ===== 마퀴 (무한 스크롤 로고) ===== */
+.marquee-section {
+  padding: 24px 0;
+  overflow: hidden;
+  position: relative;
+  background: #FFF8F5;
+}
+/* 양쪽 그라데이션 페이드 */
+.marquee-section::before,
+.marquee-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-section::before {
+  left: 0;
+  background: linear-gradient(to right, #FFF8F5, transparent);
+}
+.marquee-section::after {
+  right: 0;
+  background: linear-gradient(to left, #FFF8F5, transparent);
+}
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 40s linear infinite;
+}
+.marquee-section:hover .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  margin: 0 6px;
+  background: #fff;
+  border-radius: 24px;
+  font-size: 14px;
+  color: #555;
+  white-space: nowrap;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  font-family: 'Jua', sans-serif;
+}
+.marquee-item span.emoji {
+  font-size: 18px;
+}
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== 탭 UI ===== */
+.tab-section {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  justify-content: center;
+}
+.tab-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 28px;
+  font-family: 'Jua', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  background: #F0F0F0;
+  color: #888;
+  transition: all 0.25s;
+}
+.tab-btn.active {
+  background: linear-gradient(135deg, #FF6B8A, #FFB5A7);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(255,107,138,0.3);
+}
+
+/* ===== 카드 그리드 ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding-bottom: 12px;
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ===== 맛집 카드 ===== */
+.card {
+  background: #fff;
+  border-radius: 14px;
+  border: 1px solid #F0F0F0;
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.card-body {
+  padding: 18px 16px 14px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+/* 맛집 카드 아이콘: 골드 배경 */
+.card-icon.gold { background: #FFF3E0; }
+/* 타로 카드 아이콘: 퍼플 배경 */
+.card-icon.purple { background: #F3E8FF; }
+.card-info { flex: 1; min-width: 0; }
+.card-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2px;
+  font-family: 'Jua', sans-serif;
+}
+.card-address {
+  font-size: 12px;
+  color: #aaa;
+}
+.card-desc {
+  font-size: 12.5px;
+  color: #888;
+  line-height: 1.5;
+  flex: 1;
+}
+/* 리뷰이벤트 바 (맛집 전용) */
+.card-event-bar {
+  background: linear-gradient(135deg, #FFF8E1, #FFECB3);
+  padding: 10px 16px;
+  font-size: 12.5px;
+  color: #8D6E00;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Jua', sans-serif;
+}
+.card-event-bar .ev-icon { font-size: 16px; }
+.card-event-bar .ev-label {
+  font-size: 10px;
+  background: #FFD54F;
+  color: #6D4C00;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+/* 타로 카드 하단 배지 */
+.card-taro-bar {
+  background: #F9F0FF;
+  padding: 8px 16px;
+  font-size: 12px;
+  color: #9B59B6;
+  text-align: center;
+  font-family: 'Jua', sans-serif;
+}
+
+/* 더보기 버튼 */
+.more-btn-wrap {
+  text-align: center;
+  margin: 24px 0 8px;
+}
+.more-btn {
+  padding: 12px 36px;
+  border: 2px solid #FF6B8A;
+  background: #fff;
+  color: #FF6B8A;
+  border-radius: 28px;
+  font-family: 'Jua', sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+.more-btn:hover {
+  background: #FF6B8A;
+  color: #fff;
+}
+
+/* 숨김 처리 (더보기 전) */
+.card-grid .card.hidden-card {
+  display: none;
+}
+.card-grid.expanded .card.hidden-card {
+  display: flex;
+}
+
+/* ===== 제휴 문의 배너 ===== */
+.cta-banner {
+  max-width: 1080px;
+  margin: 48px auto 0;
+  padding: 0 20px;
+}
+.cta-inner {
+  background: linear-gradient(135deg, #FF6B8A, #FFB5A7);
+  border-radius: 20px;
+  padding: 40px 24px;
+  text-align: center;
+  color: #fff;
+}
+.cta-inner h3 {
+  font-size: 20px;
+  font-family: 'Jua', sans-serif;
+  margin-bottom: 16px;
+}
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #fff;
+  color: #FF6B8A;
+  border-radius: 28px;
+  font-family: 'Jua', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== 푸터 ===== */
+.footer {
+  text-align: center;
+  padding: 40px 20px 32px;
+  color: #bbb;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ===== 반응형 ===== */
+@media (max-width: 960px) {
+  .card-grid { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+}
+@media (max-width: 640px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 14px; }
+  .tab-btn { padding: 10px 20px; font-size: 14px; }
+}
+@media (max-width: 480px) {
+  .card-grid { grid-template-columns: 1fr; gap: 12px; }
+  .header-logo { font-size: 24px; }
+  .cta-inner { padding: 32px 16px; }
+  .cta-inner h3 { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 헤더 ===== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="remio-final.html" class="header-logo">🎮 REMIO</a>
+    <a href="remio-final.html" class="header-home">홈으로</a>
+  </div>
+</header>
+
+<!-- ===== 히어로 ===== -->
+<section class="hero reveal">
+  <h1>REMIO 제휴브랜드</h1>
+  <p>레미오와 함께하는 특별한 파트너 49곳</p>
+</section>
+
+<!-- ===== 마퀴 (무한 스크롤 로고) ===== -->
+<section class="marquee-section">
+  <div class="marquee-track" id="marqueeTrack">
+    <!-- JS에서 2세트 반복 삽입 -->
+  </div>
+</section>
+
+<!-- ===== 탭 + 카드 ===== -->
+<section class="tab-section reveal" style="padding-top:32px;">
+  <!-- 탭 바 -->
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="food" onclick="switchTab('food')">🍽️ 추천맛집 25</button>
+    <button class="tab-btn" data-tab="taro" onclick="switchTab('taro')">🔮 사주·타로 24</button>
+  </div>
+
+  <!-- 추천맛집 탭 -->
+  <div class="tab-panel active" id="panel-food">
+    <div class="card-grid" id="grid-food"></div>
+    <div class="more-btn-wrap" id="more-food-wrap">
+      <button class="more-btn" onclick="expandGrid('food')">더보기 ▼</button>
+    </div>
+  </div>
+
+  <!-- 사주타로 탭 -->
+  <div class="tab-panel" id="panel-taro">
+    <div class="card-grid" id="grid-taro"></div>
+    <div class="more-btn-wrap" id="more-taro-wrap">
+      <button class="more-btn" onclick="expandGrid('taro')">더보기 ▼</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 제휴 문의 배너 ===== -->
+<section class="cta-banner reveal">
+  <div class="cta-inner">
+    <h3>우리 매장도 레미오와 함께하고 싶다면?</h3>
+    <a href="remio-final.html#cs" class="cta-btn">💌 제휴 문의하기</a>
+  </div>
+</section>
+
+<!-- ===== 푸터 ===== -->
+<footer class="footer">
+  <div>&copy; 2025 REMIO 레미오. All rights reserved.</div>
+  <div>홍대입구역 2번 출구 도보 3분</div>
+</footer>
+
+<script>
+/* ===== 데이터: 추천맛집 25곳 ===== */
+const foodData = [
+  {emoji:'🍸',name:'포킹94',addr:'마포구 어울마당로 53 2층',desc:'감자튀김 안주에 하이볼 한 잔, 가볍게 시작하기 딱 좋은 홍대 감성 펍',evIcon:'🥃',evMenu:'원하는 하이볼 1잔'},
+  {emoji:'🌮',name:'타코잇 상수역점',addr:'마포구 와우산로13길 49 1층',desc:'이국적인 분위기 속 타코와 함께 데이트하기 좋은 상수 멕시칸 펍',evIcon:'🍋',evMenu:'라임에이드'},
+  {emoji:'🍙',name:'네코노유부 상수본점',addr:'마포구 와우산로13길 49-11 반지층',desc:'일본 감성 가득한 조용한 공간에서 즐기는 유부초밥 전문점',evIcon:'🍙',evMenu:'토마토 아란치니 1pcs / 불닭 아란치니 1pcs'},
+  {emoji:'🍗',name:'계판의 밤 홍대점',addr:'마포구 독막로7길 27 1층 2호',desc:'은은한 조명 아래 닭요리와 술 한잔, 홍대 감성 주점',evIcon:'🥃',evMenu:'하이볼 1잔'},
+  {emoji:'🍷',name:'오마주',addr:'마포구 독막로3길 29 1층',desc:'분위기와 맛 모두 잡은 셰프 감성 안주의 합정 요리주점',evIcon:'🍹',evMenu:'맥엔드랍'},
+  {emoji:'🌕',name:'만월당',addr:'마포구 독막로3길 27 1층',desc:'전과 막걸리가 생각나는 날, 감성까지 챙긴 퓨전 한식 주점',evIcon:'🍅',evMenu:'와사비꿀토마토'},
+  {emoji:'🫕',name:'찜이로닭 상수본점',addr:'마포구 와우산로 39-21 지1층',desc:'찜닭 하나로 단골을 만드는, 아는 사람만 찾는 상수 숨은 맛집',evIcon:'🥤',evMenu:'음료 1잔'},
+  {emoji:'🐉',name:'범밤부 합정본점',addr:'마포구 양화로6길 87 1층',desc:'홍콩 무드 가득한 합정 아시안 퓨전 펍, 이색 안주가 매력 포인트',evIcon:'🍞',evMenu:'홍콩토스트'},
+  {emoji:'🍶',name:'무제서울',addr:'마포구 양화로6길 91 1층',desc:'플레이팅부터 분위기까지 완벽한 합정 감성 이자카야',evIcon:'🍨',evMenu:'아이스크림 모나카'},
+  {emoji:'🏠',name:'물레도니',addr:'마포구 독막로3길 48 1~3층',desc:'한식부터 양식까지, 점심 식사에서 밤술까지 즐기는 복합 다이닝',evIcon:'🍺',evMenu:'수제맥주'},
+  {emoji:'🍷',name:'피콜로 합정본점',addr:'마포구 양화로6길 57-12 지층',desc:'아늑한 공간에서 식사와 와인을 곁들이는 합정 데이트 맛집',evIcon:'🍷',evMenu:'하우스와인 1+1'},
+  {emoji:'🏕️',name:'베이스캠프 홍대본점',addr:'마포구 잔다리로3안길 21',desc:'홍대 한복판 캠핑 감성 핫플, 친구들과 모이기 최적',evIcon:'🥓',evMenu:'껍데기'},
+  {emoji:'🎰',name:'슈퍼방구',addr:'마포구 잔다리로 12 1층',desc:'레트로 문방구 감성에 코인놀이, 포토존까지 갖춘 MZ 포차',evIcon:'🪙',evMenu:'코인 3개 (차카니 불량식품 먹거리)'},
+  {emoji:'🏡',name:'양화주택 홍대점',addr:'마포구 양화로8길 32-5 1층',desc:'떡볶이부터 안주까지, 분위기 있는 공간의 감성 데이트 술집',evIcon:'🧀',evMenu:'크림치즈떡볶이'},
+  {emoji:'🚦',name:'신호등포차',addr:'마포구 잔다리로 3 2층',desc:'술게임과 화려한 무드로 텐션 폭발, 홍대 놀이터형 포차',evIcon:'🍶',evMenu:'소주 천원 쿠폰'},
+  {emoji:'🥩',name:'고기꾼김춘배 홍대본점',addr:'마포구 홍익로3길 36 3층',desc:'고기 퀄리티와 서비스 모두 확실한, 이름값 하는 홍대 고깃집',evIcon:'🍲',evMenu:'계란찜 or 찌개'},
+  {emoji:'🍢',name:'유메오뎅',addr:'마포구 와우산로 75 1층',desc:'뜨끈한 국물에 하이볼 한 잔, 일본 감성 오뎅바의 끝판왕',evIcon:'🍢',evMenu:'오뎅 3종 또는 감자고로케'},
+  {emoji:'🍗',name:'BBQ 홍대로데오점',addr:'마포구 잔다리로6길 39 2층',desc:'기존 치킨집과는 차원이 다른, 힙한 분위기의 홍대 펍형 BBQ',evIcon:'🍟',evMenu:'감튀 or 맥주 or 음료 중 택1'},
+  {emoji:'🏮',name:'화려한오두막 홍대점',addr:'마포구 와우산로19길 5 2층',desc:'무드와 안주 비주얼 모두 살아있는, 오래 머물고 싶은 신상 주점',evIcon:'🍗',evMenu:'흑임자 가라아게'},
+  {emoji:'🦉',name:'부엉이산장 홍대점',addr:'마포구 잔다리로 9 2~3층',desc:'산장 무드 속 다양한 안주를 골라 먹는 재미, 늦은 밤 감성 술집',evIcon:'🍡',evMenu:'아이스크림호떡 / 옛날토스트 / 묵사발 / 도토리묵 중 택1'},
+  {emoji:'🍻',name:'서교포차',addr:'마포구 잔다리로 5 1~3층',desc:'넓은 매장과 포토존을 갖춘, 단체 모임에 딱인 홍대 대형 포차',evIcon:'🍨',evMenu:'아이스크림'},
+  {emoji:'🚢',name:'만선호프 홍대점',addr:'마포구 와우산로17길 15 1~2층',desc:'새벽까지 달리는 시끌벅적한 분위기, 홍대 대표 2차 술집',evIcon:'🍽️',evMenu:'원하는 안주 1개 무료'},
+  {emoji:'🍕',name:'ABC피자 홍대점',addr:'마포구 와우산로17길 25 1층',desc:'조각피자 한 판에 맥주 한 잔, 놀다 쉬어가기 좋은 미국식 야식 스팟',evIcon:'🍕',evMenu:'피자 1조각 무료'},
+  {emoji:'🎮',name:'오키도키 2호점',addr:'마포구 와우산로17길 14 2층',desc:'게임과 놀거리로 자연스럽게 텐션 UP, 홍대 놀거리형 술집',evIcon:'🍶',evMenu:'소주 1병 서비스 / 룸비 무료'},
+  {emoji:'🍺',name:'역전할머니맥주 홍대점',addr:'마포구 어울마당로 55-4 1층',desc:'가성비 안주에 살얼음 맥주, 2차 3차에 빠지지 않는 홍대 국민 술집',evIcon:'🦑',evMenu:'쥐포튀김'}
+];
+
+/* ===== 데이터: 사주·타로 24곳 ===== */
+const taroData = [
+  {emoji:'🔮',name:'메세나 사주타로',addr:'마포구 양화로 45 메세나폴리스 B182',desc:'메세나폴리스 내 위치한 사주타로 전문 상담소'},
+  {emoji:'🌙',name:'용리단길 아름 사주타로',addr:'용산구 한강대로52길 25-10 102호',desc:'용리단길에서 만나는 아름다운 사주타로 상담'},
+  {emoji:'🧿',name:'코지 사주타로',addr:'용산구 한강대로48길 21 1층 101호',desc:'아늑한 분위기의 사주타로 전문 상담소'},
+  {emoji:'⭐',name:'별이 사주타로',addr:'영등포구 여의대방로67길 8 104호',desc:'별자리와 사주로 운명을 읽어드립니다'},
+  {emoji:'🎴',name:'홍타로신점',addr:'마포구 와우산로19길 18 1층',desc:'홍대 타로와 신점을 함께 볼 수 있는 곳'},
+  {emoji:'✨',name:'단아빛타로 사주',addr:'마포구 홍익로3길 44 1층',desc:'단아하고 빛나는 타로·사주 상담 전문'},
+  {emoji:'☀️',name:'태양타로사주',addr:'마포구 홍익로3길 25 1층',desc:'밝은 에너지로 타로와 사주를 상담해드립니다'},
+  {emoji:'🌸',name:'소담타로',addr:'마포구 홍익로3길 37 103호',desc:'소담하고 따뜻한 타로 상담을 만나보세요'},
+  {emoji:'🔮',name:'셀리의법칙',addr:'마포구 홍익로3길 39 1층 왼쪽',desc:'셀리만의 특별한 법칙으로 운명을 읽어드려요'},
+  {emoji:'🌙',name:'지성화타로',addr:'마포구 홍익로3길 19',desc:'지성과 감성을 담은 타로 상담 전문'},
+  {emoji:'🏛️',name:'홍대원조사주타로',addr:'마포구 홍익로3길 43 2층',desc:'홍대 사주타로의 원조! 오랜 경력의 전문 상담'},
+  {emoji:'🧸',name:'솜이타로',addr:'마포구 홍익로3길 39 2층',desc:'솜사탕처럼 부드러운 타로 상담을 경험해보세요'},
+  {emoji:'🧪',name:'홍대사주랩',addr:'마포구 홍익로3길 29',desc:'데이터 기반의 체계적인 사주 분석 전문'},
+  {emoji:'🎀',name:'희수타로',addr:'마포구 홍익로3길 19 1층',desc:'섬세하고 정확한 타로 리딩 전문 상담소'},
+  {emoji:'🛤️',name:'길사주타로',addr:'마포구 홍익로3길 25 1층',desc:'인생의 좋은 길을 찾아주는 사주타로 상담'},
+  {emoji:'🚶',name:'가지않은길',addr:'마포구 서교동 365-18',desc:'아직 가지 않은 길, 타로로 미리 살펴보세요'},
+  {emoji:'🍃',name:'홍대연남의 사주타로궁합',addr:'마포구 연희로1길 23 1층',desc:'연남동에서 만나는 사주타로 & 궁합 전문 상담'},
+  {emoji:'💕',name:'썸 사주&타로',addr:'서대문구 연세로7안길 2 3층',desc:'연애·썸 전문 사주타로 상담소'},
+  {emoji:'💜',name:'썸타로사주 신촌유플렉스점',addr:'서대문구 연세로5길 6 제1동 3층',desc:'신촌 유플렉스에서 만나는 썸타로사주'},
+  {emoji:'📌',name:'팩트&사주타로 연남5호점',addr:'마포구 동교로 227-11 1층',desc:'팩트만 말하는 직설 사주타로! 홍대입구역'},
+  {emoji:'📌',name:'팩트&사주타로 마포3호점',addr:'마포구 도화동 334-4',desc:'팩트 사주타로 마포 지역 3호점'},
+  {emoji:'📌',name:'팩트&사주타로 종로점',addr:'종로구 수표로 115 1층',desc:'팩트 사주타로 종로 지역점'},
+  {emoji:'🏯',name:'도원사주타로',addr:'성동구 왕십리로10길 21 2층 201호',desc:'성수동에서 만나는 도원 사주타로 상담'},
+  {emoji:'🧞',name:'지니어스 타로 신점',addr:'광진구 아차산로 242 1층',desc:'천재적 직관의 타로 & 신점 상담 전문'}
+];
+
+/* ===== 마퀴 브랜드 목록 ===== */
+const marqueeItems = [
+  {emoji:'🍸',name:'포킹94'},{emoji:'🔮',name:'메세나사주타로'},{emoji:'🌮',name:'타코잇'},{emoji:'🌙',name:'아름사주타로'},
+  {emoji:'🍙',name:'네코노유부'},{emoji:'✨',name:'단아빛타로'},{emoji:'🍗',name:'계판의밤'},{emoji:'☀️',name:'태양타로사주'},
+  {emoji:'🍷',name:'오마주'},{emoji:'🌸',name:'소담타로'},{emoji:'🌕',name:'만월당'},{emoji:'🏛️',name:'홍대원조사주타로'},
+  {emoji:'🍶',name:'무제서울'},{emoji:'📌',name:'팩트사주타로'},{emoji:'🏕️',name:'베이스캠프'},{emoji:'💕',name:'썸사주&타로'},
+  {emoji:'🎰',name:'슈퍼방구'},{emoji:'🧿',name:'코지사주타로'},{emoji:'🚦',name:'신호등포차'},{emoji:'🎴',name:'홍타로신점'},
+  {emoji:'🥩',name:'고기꾼김춘배'},{emoji:'🧞',name:'지니어스타로'},{emoji:'🍢',name:'유메오뎅'},{emoji:'🏯',name:'도원사주타로'}
+];
+
+/* ===== 마퀴 렌더링 (2세트로 무한루프) ===== */
+(function renderMarquee() {
+  const track = document.getElementById('marqueeTrack');
+  let html = '';
+  // 2세트 반복으로 끊김 없는 무한 스크롤
+  for (let s = 0; s < 2; s++) {
+    marqueeItems.forEach(item => {
+      html += '<div class="marquee-item"><span class="emoji">' + item.emoji + '</span>' + item.name + '</div>';
+    });
+  }
+  track.innerHTML = html;
+})();
+
+/* ===== 맛집 카드 렌더링 ===== */
+(function renderFoodCards() {
+  const grid = document.getElementById('grid-food');
+  let html = '';
+  foodData.forEach((d, i) => {
+    const hiddenClass = i >= 6 ? ' hidden-card' : '';
+    html += '<div class="card' + hiddenClass + '">' +
+      '<div class="card-body">' +
+        '<div class="card-top">' +
+          '<div class="card-icon gold">' + d.emoji + '</div>' +
+          '<div class="card-info">' +
+            '<div class="card-name">' + d.name + '</div>' +
+            '<div class="card-address">' + d.addr + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="card-desc">' + d.desc + '</div>' +
+      '</div>' +
+      '<div class="card-event-bar">' +
+        '<span class="ev-label">리뷰이벤트</span>' +
+        '<span class="ev-icon">' + d.evIcon + '</span> ' + d.evMenu +
+      '</div>' +
+    '</div>';
+  });
+  grid.innerHTML = html;
+})();
+
+/* ===== 타로 카드 렌더링 ===== */
+(function renderTaroCards() {
+  const grid = document.getElementById('grid-taro');
+  let html = '';
+  taroData.forEach((d, i) => {
+    const hiddenClass = i >= 6 ? ' hidden-card' : '';
+    html += '<div class="card' + hiddenClass + '">' +
+      '<div class="card-body">' +
+        '<div class="card-top">' +
+          '<div class="card-icon purple">' + d.emoji + '</div>' +
+          '<div class="card-info">' +
+            '<div class="card-name">' + d.name + '</div>' +
+            '<div class="card-address">' + d.addr + '</div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="card-desc">' + d.desc + '</div>' +
+      '</div>' +
+      '<div class="card-taro-bar">🧸 레미오 인형 판매중</div>' +
+    '</div>';
+  });
+  grid.innerHTML = html;
+})();
+
+/* ===== 탭 전환 ===== */
+function switchTab(tab) {
+  // 버튼 활성화
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tab);
+  });
+  // 패널 전환
+  document.querySelectorAll('.tab-panel').forEach(panel => {
+    panel.classList.toggle('active', panel.id === 'panel-' + tab);
+  });
+}
+
+/* ===== 더보기 ===== */
+function expandGrid(type) {
+  const grid = document.getElementById('grid-' + type);
+  grid.classList.add('expanded');
+  document.getElementById('more-' + type + '-wrap').style.display = 'none';
+}
+
+/* ===== 스크롤 리빌 (IntersectionObserver) ===== */
+(function initReveal() {
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(function(el) {
+    observer.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
