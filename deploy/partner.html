@@ -177,14 +177,16 @@ a { text-decoration: none; color: inherit; }
   font-family: 'Jua', sans-serif;
 }
 .marquee-logo {
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
+  border: 1.5px solid #f0f0f0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 .marquee-emoji {
-  font-size: 18px;
+  font-size: 20px;
   flex-shrink: 0;
 }
 @keyframes marqueeScroll {
@@ -259,22 +261,28 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 10px;
 }
 .card-icon {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 28px;
   flex-shrink: 0;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 2px solid #f5f5f5;
 }
-.card-icon.gold { background: #FFF3E0; }
-.card-icon.purple { background: #F3E8FF; }
+.card-icon.gold { background: #FFF8F0; }
+.card-icon.purple { background: #F6EEFF; }
 .card-icon img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s;
+}
+.card:hover .card-icon img {
+  transform: scale(1.08);
 }
 .card-info { flex: 1; min-width: 0; }
 .card-name {
@@ -424,11 +432,12 @@ a { text-decoration: none; color: inherit; }
   margin-bottom: 12px;
 }
 .modal-logo {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
   object-fit: cover;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #f0f0f0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 .modal-name {
   font-size: 22px;
@@ -819,59 +828,60 @@ var foodData = [
 ];
 
 /* ===== 데이터: 사주·타로 24곳 ===== */
+var TARO_IMG = '레미오 사주타로/';
 var taroData = [
-  {emoji:'🔮',name:'메세나 사주타로',addr:'마포구 양화로 45 메세나폴리스 B182',desc:'메세나폴리스 내 위치한 사주타로 전문 상담소'},
-  {emoji:'🌙',name:'용리단길 아름 사주타로',addr:'용산구 한강대로52길 25-10 102호',desc:'용리단길에서 만나는 아름다운 사주타로 상담'},
-  {emoji:'🧿',name:'코지 사주타로',addr:'용산구 한강대로48길 21 1층 101호',desc:'아늑한 분위기의 사주타로 전문 상담소'},
-  {emoji:'⭐',name:'별이 사주타로',addr:'영등포구 여의대방로67길 8 104호',desc:'별자리와 사주로 운명을 읽어드립니다'},
-  {emoji:'🎴',name:'홍타로신점',addr:'마포구 와우산로19길 18 1층',desc:'홍대 타로와 신점을 함께 볼 수 있는 곳'},
-  {emoji:'✨',name:'단아빛타로 사주',addr:'마포구 홍익로3길 44 1층',desc:'단아하고 빛나는 타로·사주 상담 전문'},
-  {emoji:'☀️',name:'태양타로사주',addr:'마포구 홍익로3길 25 1층',desc:'밝은 에너지로 타로와 사주를 상담해드립니다'},
-  {emoji:'🌸',name:'소담타로',addr:'마포구 홍익로3길 37 103호',desc:'소담하고 따뜻한 타로 상담을 만나보세요'},
-  {emoji:'🔮',name:'셀리의법칙',addr:'마포구 홍익로3길 39 1층 왼쪽',desc:'셀리만의 특별한 법칙으로 운명을 읽어드려요'},
-  {emoji:'🌙',name:'지성화타로',addr:'마포구 홍익로3길 19',desc:'지성과 감성을 담은 타로 상담 전문'},
-  {emoji:'🏛️',name:'홍대원조사주타로',addr:'마포구 홍익로3길 43 2층',desc:'홍대 사주타로의 원조! 오랜 경력의 전문 상담'},
-  {emoji:'🧸',name:'솜이타로',addr:'마포구 홍익로3길 39 2층',desc:'솜사탕처럼 부드러운 타로 상담을 경험해보세요'},
-  {emoji:'🧪',name:'홍대사주랩',addr:'마포구 홍익로3길 29',desc:'데이터 기반의 체계적인 사주 분석 전문'},
-  {emoji:'🎀',name:'희수타로',addr:'마포구 홍익로3길 19 1층',desc:'섬세하고 정확한 타로 리딩 전문 상담소'},
-  {emoji:'🛤️',name:'길사주타로',addr:'마포구 홍익로3길 25 1층',desc:'인생의 좋은 길을 찾아주는 사주타로 상담'},
+  {name:'메세나 사주타로',addr:'마포구 양화로 45 메세나폴리스 B182',desc:'메세나폴리스 내 위치한 사주타로 전문 상담소',logo:'메세나 사주&타로.png'},
+  {name:'용리단길 아름 사주타로',addr:'용산구 한강대로52길 25-10 102호',desc:'용리단길에서 만나는 아름다운 사주타로 상담',logo:'아름 사주타로.png'},
+  {name:'코지 사주타로',addr:'용산구 한강대로48길 21 1층 101호',desc:'아늑한 분위기의 사주타로 전문 상담소',logo:'코지 사주타로.png'},
+  {name:'별이 사주타로',addr:'영등포구 여의대방로67길 8 104호',desc:'별자리와 사주로 운명을 읽어드립니다',logo:'별이 사주타로.png'},
+  {name:'홍타로신점',addr:'마포구 와우산로19길 18 1층',desc:'홍대 타로와 신점을 함께 볼 수 있는 곳',logo:'홍타로신점.png'},
+  {name:'단아빛타로 사주',addr:'마포구 홍익로3길 44 1층',desc:'단아하고 빛나는 타로·사주 상담 전문',logo:'단아빛타로.png'},
+  {name:'태양타로사주',addr:'마포구 홍익로3길 25 1층',desc:'밝은 에너지로 타로와 사주를 상담해드립니다',logo:'태양 사주.png'},
+  {name:'소담타로',addr:'마포구 홍익로3길 37 103호',desc:'소담하고 따뜻한 타로 상담을 만나보세요',logo:'소담 사주타로.png'},
+  {name:'셀리의법칙',addr:'마포구 홍익로3길 39 1층 왼쪽',desc:'셀리만의 특별한 법칙으로 운명을 읽어드려요',logo:'샐리의법칙 사주타로.png'},
+  {name:'지성화타로',addr:'마포구 홍익로3길 19',desc:'지성과 감성을 담은 타로 상담 전문',logo:'지성화 타로.png'},
+  {name:'홍대원조사주타로',addr:'마포구 홍익로3길 43 2층',desc:'홍대 사주타로의 원조! 오랜 경력의 전문 상담',logo:'홍대원조 사주타로.png'},
+  {name:'솜이타로',addr:'마포구 홍익로3길 39 2층',desc:'솜사탕처럼 부드러운 타로 상담을 경험해보세요',logo:'솜이타로.png'},
+  {name:'홍대사주랩',addr:'마포구 홍익로3길 29',desc:'데이터 기반의 체계적인 사주 분석 전문',logo:'홍대사주 Lap.png'},
+  {name:'희수타로',addr:'마포구 홍익로3길 19 1층',desc:'섬세하고 정확한 타로 리딩 전문 상담소',logo:'희수 사주타로.png'},
+  {name:'길사주타로',addr:'마포구 홍익로3길 25 1층',desc:'인생의 좋은 길을 찾아주는 사주타로 상담',logo:'사주 길 타로.png'},
   {emoji:'🚶',name:'가지않은길',addr:'마포구 서교동 365-18',desc:'아직 가지 않은 길, 타로로 미리 살펴보세요'},
-  {emoji:'🍃',name:'홍대연남의 사주타로궁합',addr:'마포구 연희로1길 23 1층',desc:'연남동에서 만나는 사주타로 & 궁합 전문 상담'},
-  {emoji:'💕',name:'썸 사주&타로',addr:'서대문구 연세로7안길 2 3층',desc:'연애·썸 전문 사주타로 상담소'},
-  {emoji:'💜',name:'썸타로사주 신촌유플렉스점',addr:'서대문구 연세로5길 6 제1동 3층',desc:'신촌 유플렉스에서 만나는 썸타로사주'},
-  {emoji:'📌',name:'팩트&사주타로 연남5호점',addr:'마포구 동교로 227-11 1층',desc:'팩트만 말하는 직설 사주타로! 홍대입구역'},
-  {emoji:'📌',name:'팩트&사주타로 마포3호점',addr:'마포구 도화동 334-4',desc:'팩트 사주타로 마포 지역 3호점'},
-  {emoji:'📌',name:'팩트&사주타로 종로점',addr:'종로구 수표로 115 1층',desc:'팩트 사주타로 종로 지역점'},
-  {emoji:'🏯',name:'도원사주타로',addr:'성동구 왕십리로10길 21 2층 201호',desc:'성수동에서 만나는 도원 사주타로 상담'},
-  {emoji:'🧞',name:'지니어스 타로 신점',addr:'광진구 아차산로 242 1층',desc:'천재적 직관의 타로 & 신점 상담 전문'}
+  {name:'홍대연남의 사주타로궁합',addr:'마포구 연희로1길 23 1층',desc:'연남동에서 만나는 사주타로 & 궁합 전문 상담',logo:'홍대연남의 사주 타로 궁합.png'},
+  {name:'썸 사주&타로',addr:'서대문구 연세로7안길 2 3층',desc:'연애·썸 전문 사주타로 상담소',logo:'썸 사주타로.png'},
+  {name:'썸타로사주 신촌유플렉스점',addr:'서대문구 연세로5길 6 제1동 3층',desc:'신촌 유플렉스에서 만나는 썸타로사주',logo:'썸 사주타로.png'},
+  {name:'팩트&사주타로 연남5호점',addr:'마포구 동교로 227-11 1층',desc:'팩트만 말하는 직설 사주타로! 홍대입구역',logo:'팩트사주타로.png'},
+  {name:'팩트&사주타로 마포3호점',addr:'마포구 도화동 334-4',desc:'팩트 사주타로 마포 지역 3호점',logo:'팩트사주타로.png'},
+  {name:'팩트&사주타로 종로점',addr:'종로구 수표로 115 1층',desc:'팩트 사주타로 종로 지역점',logo:'팩트사주타로.png'},
+  {name:'도원사주타로',addr:'성동구 왕십리로10길 21 2층 201호',desc:'성수동에서 만나는 도원 사주타로 상담',logo:'도원 사주 타로.png'},
+  {name:'지니어스 타로 신점',addr:'광진구 아차산로 242 1층',desc:'천재적 직관의 타로 & 신점 상담 전문',logo:'영적사주 신타로 지니어스.png'}
 ];
 
 /* ===== 마퀴 브랜드 목록 ===== */
 var marqueeItems = [
   {name:'포킹94',logo:'포킹94/포킹94_로고.png'},
-  {emoji:'🔮',name:'메세나사주타로'},
+  {name:'메세나사주타로',taroLogo:'메세나 사주&타로.png'},
   {name:'타코잇',logo:'타코잇/타코잇_로고.png'},
-  {emoji:'🌙',name:'아름사주타로'},
+  {name:'아름사주타로',taroLogo:'아름 사주타로.png'},
   {name:'네코노유부',logo:'네코노유부/네코노유부_로고.png'},
-  {emoji:'✨',name:'단아빛타로'},
+  {name:'단아빛타로',taroLogo:'단아빛타로.png'},
   {name:'계판의밤',logo:'계판의 밤/계판의밤_로고.png'},
-  {emoji:'☀️',name:'태양타로사주'},
+  {name:'태양타로사주',taroLogo:'태양 사주.png'},
   {name:'오마주',logo:'오마주/오마주_로고.png'},
-  {emoji:'🌸',name:'소담타로'},
+  {name:'소담타로',taroLogo:'소담 사주타로.png'},
   {name:'만월당',logo:'만월당/만월당_로고.png'},
-  {emoji:'🏛️',name:'홍대원조사주타로'},
+  {name:'홍대원조사주타로',taroLogo:'홍대원조 사주타로.png'},
   {name:'무제서울',logo:'무제서울/무제서울_로고.png'},
-  {emoji:'📌',name:'팩트사주타로'},
+  {name:'팩트사주타로',taroLogo:'팩트사주타로.png'},
   {name:'베이스캠프',logo:'베이스캠프/베이스캠프_로고.png'},
-  {emoji:'💕',name:'썸사주&타로'},
+  {name:'썸사주&타로',taroLogo:'썸 사주타로.png'},
   {name:'슈퍼방구',logo:'슈퍼방구/슈퍼방구_로고.png'},
-  {emoji:'🧿',name:'코지사주타로'},
+  {name:'코지사주타로',taroLogo:'코지 사주타로.png'},
   {name:'신호등포차',logo:'신호등포차/신호등포차_로고.png'},
-  {emoji:'🎴',name:'홍타로신점'},
+  {name:'홍타로신점',taroLogo:'홍타로신점.png'},
   {name:'고기꾼김춘배',logo:'고기꾼김춘배/고기꾼김춘배_로고.png'},
-  {emoji:'🧞',name:'지니어스타로'},
+  {name:'지니어스타로',taroLogo:'영적사주 신타로 지니어스.png'},
   {name:'유메오뎅',logo:'유메오뎅/유메오뎅_로고.png'},
-  {emoji:'🏯',name:'도원사주타로'}
+  {name:'도원사주타로',taroLogo:'도원 사주 타로.png'}
 ];
 
 /* ===== 마퀴 렌더링 ===== */
@@ -880,10 +890,11 @@ var marqueeItems = [
   var html = '';
   for (var s = 0; s < 2; s++) {
     marqueeItems.forEach(function(item) {
-      if (item.logo) {
-        html += '<div class="marquee-item"><img class="marquee-logo" src="' + IMG + item.logo + '" alt="' + item.name + '" loading="lazy">' + item.name + '</div>';
+      var imgSrc = item.logo ? (IMG + item.logo) : (item.taroLogo ? (TARO_IMG + item.taroLogo) : '');
+      if (imgSrc) {
+        html += '<div class="marquee-item"><img class="marquee-logo" src="' + imgSrc + '" alt="' + item.name + '" loading="lazy">' + item.name + '</div>';
       } else {
-        html += '<div class="marquee-item"><span class="marquee-emoji">' + item.emoji + '</span>' + item.name + '</div>';
+        html += '<div class="marquee-item"><span class="marquee-emoji">' + (item.emoji || '🔮') + '</span>' + item.name + '</div>';
       }
     });
   }
@@ -923,10 +934,13 @@ var marqueeItems = [
   var html = '';
   taroData.forEach(function(d, i) {
     var hiddenClass = i >= 6 ? ' hidden-card' : '';
+    var iconContent = d.logo
+      ? '<img src="' + TARO_IMG + d.logo + '" alt="' + d.name + '" loading="lazy">'
+      : (d.emoji || '🔮');
     html += '<div class="card' + hiddenClass + '">' +
       '<div class="card-body">' +
         '<div class="card-top">' +
-          '<div class="card-icon purple">' + d.emoji + '</div>' +
+          '<div class="card-icon purple">' + iconContent + '</div>' +
           '<div class="card-info">' +
             '<div class="card-name">' + d.name + '</div>' +
             '<div class="card-address">' + d.addr + '</div>' +
